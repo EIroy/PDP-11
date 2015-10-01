@@ -12,3 +12,7 @@
 
 
 // TODO: Установите здесь ссылки на дополнительные заголовки, требующиеся для программы
+#include <malloc.h>
+#include <string.h>
+#include "PDP_11_memory.h"
+#include "PDP_11_registers.h"

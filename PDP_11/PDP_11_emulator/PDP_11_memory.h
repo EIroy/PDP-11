@@ -1,13 +1,10 @@
+#include "PDP_11_types.h"
+
 #define MEMORY_SIZE 0x8000	//
 #define RAM_SIZE	0x2000	//
 #define VRAM_SIZE	0x2000	// maybe move to other file
 #define ROM_SIZE	0x3C00	//
 #define IO_SIZE		0x0400	//
-
-typedef int size_t;
-typedef int status_t;
-typedef short addres_t;
-typedef unsigned char byte_t;
 
 typedef struct _PDP_11_memory {
 	void* start_pos;

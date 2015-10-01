@@ -1,5 +1,6 @@
 #include "PDP_11_memory.h"
 #include <malloc.h>
+#include "stdafx.h"
 
 status_t PDP_11_memory_init(PDP_11_memory* memory) {
 	memory->start_pos = malloc(MEMORY_SIZE);
@@ -27,4 +28,6 @@ status_t PDP_11_memory_read_byte(addres_t addr, PDP_11_memory* memory, byte_t* b
 status_t PDP_11_memory_write_byte(addres_t addr, PDP_11_memory* memory, byte_t buffer) {
 	byte_t* abs_addr = (byte_t*)((int)memory->start_pos + (int)addr);
 	*abs_addr = buffer;
+
+	return 0;
 }
